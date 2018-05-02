@@ -87,7 +87,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber === cardNumber) {
+  if (arguments[0] > 0) {
     var totalCost = total();
     for (let i = cart.length; i > 0; i--) {
       cart.shift();
